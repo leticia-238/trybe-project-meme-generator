@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: snow;
+  font-family: Ubuntu, sans-serif;
+}
+
+header {
+  padding: 25px 25px 50px;
+  text-align: center;
+  color: coral;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div {
+  margin: 20px;
+}
+
+#text-input {
+  resize: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+#meme-insert {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#meme-image-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: white;
+}
+
+#meme-text {
+  position: absolute;
+  word-break: break-word;
+  text-shadow: 5px 5px 5px black;
+  font: 30px Calibri, sans-serif;
+  color: white;
+}
+
+#meme-image {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  background-clip: content-box;
+  margin: 5px;
+}
+
+#fire {
+  background-color: red;
+}
+
+#water {
+  background-color: blue;
+}
+
+#earth {
+  background-color: green;
+}
+
+.default {
+  border: 1px solid black;
+}
+
+.fire {
+  border: 3px dashed red;
+}
+
+.water {
+  border: 5px double blue;
+}
+
+.earth {
+  border: 6px groove green;
+}
+
+.parag {
+  margin: 0 20px;
+}
+
+.container {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+
+.container div {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  background-color: coral;
+  border-radius: 10px;
+  padding: 0 5px 5px;
+}
+
+.container div:hover {
+  box-shadow: 0 1px 2px rgb(207 , 166 , 96);
+}
+
+.container div:first-child {
+  width: 100px;
+}
+
+.container .icon {
+  display: block;
+  margin: 5px;
+  font-size: 32px;
+}
+
+#imgs-memes img {
+  width: 60px;
+  margin-top: 10px;
+  border: 2px solid rgb(168 , 50 , 8);
+}
+
+#imgs-memes img:hover {
+  box-shadow: 0 1px 5px rgb(146 , 45 , 8);
+}
+
+#buttons-border {
+  display: flex;
+  align-items: center;
+}
+
+.container-text {
+  display: flex;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Generator</title>
+    <!--style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--icons-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Meme Generator</h1>
+      <p><em>Crie seu próprio meme!</em></p>
+    </header>
+    <main>
+      <section>
+        <div class="container-text">
+          <label for="text-input">Texto para o meme:</label>
+          <textarea
+            id="text-input"
+            cols="30"
+            rows="2"
+            maxlength="60"
+          ></textarea>
+        </div>
+        <p class="parag">Escolher imagem para o meme:</p>
+        <div class="container">
+          <div>
+            <label for="meme-insert"
+              ><i class="material-icons icon">perm_media</i>Fazer upload</label
+            >
+            <input type="file" id="meme-insert" />
+          </div>
+          <div id="imgs-memes">
+            <img src="imgs/meme1.png" id="meme-1" />
+            <img src="imgs/meme2.png" id="meme-2" />
+            <img src="imgs/meme3.png" id="meme-3" />
+            <img src="imgs/meme4.png" id="meme-4" />
+            <p>Escolher imagem</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="meme-image-container" class="default">
+          <p id="meme-text"></p>
+          <img id="meme-image" />
+        </div>
+        <div id="buttons-border">
+          <p>Estilo da borda:</p>
+          <button type="button" id="fire" class="fire"></button>
+          <button type="button" id="water" class="water"></button>
+          <button type="button" id="earth" class="earth"></button>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
